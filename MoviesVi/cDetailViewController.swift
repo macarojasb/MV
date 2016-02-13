@@ -1,21 +1,20 @@
 //
-//  DetailViewController.swift
+//  cDetailViewController.swift
 //  MoviesVi
 //
-//  Created by Macarena Rojas on 2/7/16.
+//  Created by Macarena Rojas on 2/12/16.
 //  Copyright © 2016 Maca Rojas. All rights reserved.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class cDetailViewController: UIViewController {
 
-
-   
-    @IBOutlet weak var posterImageView: UIImageView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var infoView: UIView!
     
     var movie: NSDictionary!
@@ -43,24 +42,24 @@ class DetailViewController: UIViewController {
             
         }
         
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

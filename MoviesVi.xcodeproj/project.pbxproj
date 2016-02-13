@@ -13,6 +13,7 @@
 		0410B4941C5080E10043640C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410B4931C5080E10043640C /* MovieCell.swift */; };
 		0458AE941C545B4E00862815 /* cvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458AE931C545B4E00862815 /* cvCell.swift */; };
 		0458AE961C54669700862815 /* cvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458AE951C54669700862815 /* cvmViewController.swift */; };
+		045A3DD71C6EDB7A00073FF3 /* cDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A3DD61C6EDB7A00073FF3 /* cDetailViewController.swift */; };
 		0499D9811C619D9500E605B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0499D9801C619D9500E605B4 /* LaunchScreen.storyboard */; };
 		0499D9831C619DCF00E605B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0499D9821C619DCF00E605B4 /* Main.storyboard */; };
 		04D5921B1C67FB140058B390 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5921A1C67FB140058B390 /* DetailViewController.swift */; };
@@ -28,6 +29,7 @@
 		0410B4931C5080E10043640C /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		0458AE931C545B4E00862815 /* cvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cvCell.swift; sourceTree = "<group>"; };
 		0458AE951C54669700862815 /* cvmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cvmViewController.swift; sourceTree = "<group>"; };
+		045A3DD61C6EDB7A00073FF3 /* cDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cDetailViewController.swift; sourceTree = "<group>"; };
 		0499D9801C619D9500E605B4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0499D9821C619DCF00E605B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04D5921A1C67FB140058B390 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				0410B4901C5078CB0043640C /* MoviesViewController.swift */,
 				0458AE951C54669700862815 /* cvmViewController.swift */,
+				045A3DD61C6EDB7A00073FF3 /* cDetailViewController.swift */,
 				04D5921A1C67FB140058B390 /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
@@ -244,6 +247,7 @@
 				0458AE941C545B4E00862815 /* cvCell.swift in Sources */,
 				04D5921B1C67FB140058B390 /* DetailViewController.swift in Sources */,
 				0410B4911C5078CB0043640C /* MoviesViewController.swift in Sources */,
+				045A3DD71C6EDB7A00073FF3 /* cDetailViewController.swift in Sources */,
 				0410B4941C5080E10043640C /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

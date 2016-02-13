@@ -12,11 +12,39 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let nowPlayingNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
+        nowPlayingViewController.endpoint = "now_playing"
+        nowPlayingNavigationController.tabBarItem.title = "List"
+        
+        
+        let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
+        topRatedViewController.endpoint = "top_rated"
+        topRatedNavigationController.tabBarItem.title = "Top Rated"
+
+        let cvmNavigationController = storyboard.instantiateViewControllerWithIdentifier("cvmNavigationController") as! UINavigationController
+        let collectionViewController = cvmNavigationController.topViewController as! cvmViewController
+        collectionViewController.tabBarItem.title = "Collection"
+
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [cvmNavigationController,nowPlayingNavigationController,topRatedNavigationController]
+
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
