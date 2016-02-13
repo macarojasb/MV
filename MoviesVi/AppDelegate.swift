@@ -16,26 +16,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+       
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        //View Controllers
+        
         let nowPlayingNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
         nowPlayingViewController.endpoint = "now_playing"
-        nowPlayingNavigationController.tabBarItem.title = "List"
-        
         
         let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
         topRatedViewController.endpoint = "top_rated"
-        topRatedNavigationController.tabBarItem.title = "Top Rated"
-
+        
         let cvmNavigationController = storyboard.instantiateViewControllerWithIdentifier("cvmNavigationController") as! UINavigationController
         let collectionViewController = cvmNavigationController.topViewController as! cvmViewController
+        
+        //Bar item titles
         collectionViewController.tabBarItem.title = "Collection"
+        topRatedNavigationController.tabBarItem.title = "Top Rated"
+        nowPlayingNavigationController.tabBarItem.title = "List"
+        
+        //Bar item picture
+        
+        cvmNavigationController.tabBarItem.image = UIImage(named: "collection")
+        nowPlayingNavigationController.tabBarItem.image = UIImage(named: "list")
+        topRatedNavigationController.tabBarItem.image = UIImage(named: "star")
+        
+        //Navigation Names
+            cvmNavigationController.navigationBar.topItem!.title = "MoviesVi"
+        
+            nowPlayingNavigationController.navigationBar.topItem?.title = "MoviesVi"
+        
+            topRatedNavigationController.navigationBar.topItem?.title = "MoviesVi"
 
+        
+        //tabBar Setup
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [cvmNavigationController,nowPlayingNavigationController,topRatedNavigationController]

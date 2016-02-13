@@ -176,13 +176,14 @@ class cvmViewController: UIViewController, UICollectionViewDataSource,UICollecti
     }
     
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as! MovieCell
-    
-        cell.selectionStyle = .None
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+        
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! cvCell
+        
+        cell.selectedBackgroundView = .None
+      
 
     }
 

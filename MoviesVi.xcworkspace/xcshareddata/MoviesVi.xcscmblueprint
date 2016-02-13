@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1802EE24BC187F08150D3AD87BA5CC4F10F3C1FB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "21C65384EB727870830F1DEEC1ED0116E73EA9EC" : 0,
+    "1802EE24BC187F08150D3AD87BA5CC4F10F3C1FB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1D6BBA6D-1BC6-48FB-A1D2-C0D43362D1A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "21C65384EB727870830F1DEEC1ED0116E73EA9EC" : "",
+    "1802EE24BC187F08150D3AD87BA5CC4F10F3C1FB" : "MV\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MoviesVi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MoviesVi.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/macarojasb\/MV.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1802EE24BC187F08150D3AD87BA5CC4F10F3C1FB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/macarojasb\/MoviesVi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21C65384EB727870830F1DEEC1ED0116E73EA9EC"
+    }
+  ]
+}
